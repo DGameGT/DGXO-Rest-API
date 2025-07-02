@@ -1,0 +1,75 @@
+{
+  "name": "DGXO REST API",
+  "version": "v1.0.0",
+  "description": "Fitur bot mati? ya DGXO REST API",
+  "bannerImage": "/src/banner.jpg",
+  "header": {
+    "status": "Online!"
+  },
+  "apiSettings": {
+    "creator": "DGXO",
+    "apikey": ["dgxo-api"]
+  },
+  "categories": [
+    {
+      "name": "Uncensored Image Generator",
+      "items": [
+        {
+          "name": "Uncen Image",
+          "desc": "Generate uncensored NSFW image via prompt",
+          "path": "/api/image/uncen?prompt=",
+          "status": "ready",
+          "params": {
+            "prompt": "Prompt for image generation",
+            "negative_prompt": "(optional) Negative prompt to exclude",
+            "style": "(optional) anime | real | photo",
+            "width": "(optional) Image width in px",
+            "height": "(optional) Image height in px",
+            "guidance_scale": "(optional) Prompt adherence scale (default 7)",
+            "inference_steps": "(optional) Number of image generation steps (default 28)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "HydroMind",
+      "items": [
+        {
+          "name": "HydroMind AI",
+          "desc": "See the list of supported AI models here: https://mind.hydrooo.web.id",
+          "path": "/ai/hydromind?text=&model=",
+          "status": "ready",
+          "params": {
+            "text": "Teks atau perintah untuk chat AI",
+            "model": "Model name (see: https://mind.hydrooo.web.id)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Random",
+      "items": [
+        {
+          "name": "Blue Archive",
+          "desc": "Blue Archive Random Images",
+          "path": "/random/ba",
+          "status": "ready"
+        }
+      ]
+    },
+    {
+      "name": "Search Tools",
+      "items": [
+        {
+          "name": "YouTube",
+          "desc": "Video search",
+          "path": "/search/youtube?q=",
+          "status": "ready",
+          "params": {
+            "q": "Search query"
+          }
+        }
+      ]
+    }
+  ]
+}

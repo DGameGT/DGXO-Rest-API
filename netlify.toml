@@ -1,0 +1,3 @@
+[build]
+  publish = "api-page"
+  command = "cp -r src api-page/"
